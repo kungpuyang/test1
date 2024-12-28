@@ -1,0 +1,13 @@
+name: run python
+on: 
+    push: 
+
+jobs: 
+    build:
+        name: run py1
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: run python
+              run: 
+                python3 test.py # test.py is the python file to run
